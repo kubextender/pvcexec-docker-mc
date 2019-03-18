@@ -1,5 +1,8 @@
+IMAGE ?= kodiraj.ga:5001/mcpvc/runner-docker
+TAG ?= latest
 buildimage:
-	docker build -t kodiraj.ga:5001/pvcm:latest .
-
+	docker build -t $(IMAGE):$(TAG) .
+pushimage:
+	docker push $(IMAGE):$(TAG)
 smoke_test:
-	docker run -it kodiraj.ga:5001/pvcm:latest
+	docker run -it $(IMAGE):$(TAG)
