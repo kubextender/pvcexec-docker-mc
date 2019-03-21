@@ -1,5 +1,5 @@
-IMAGE ?= kodiraj.ga:5001/mcpvc/runner-docker
-TAG ?= latest
+IMAGE ?= kubextender/pvcexec-mc
+TAG ?= LATEST
 buildimage:
 	docker build -t $(IMAGE):$(TAG) .
 pushimage:
