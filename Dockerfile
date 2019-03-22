@@ -1,5 +1,5 @@
-FROM debian:buster-slim
+FROM alpine:3.6
 
-RUN apt-get update && apt-get install mc -y
+RUN apk update && apk add mc
 
 CMD mc
