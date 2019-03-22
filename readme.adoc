@@ -1,0 +1,3 @@
+image:https://travis-ci.com/kubextender/pvcexec-docker-mc.svg?branch=master["Build Status", link="https://travis-ci.com/kubextender/pvcexec-docker-mc"]
+
+`docker pull kubextender/pvcexec-mc`
